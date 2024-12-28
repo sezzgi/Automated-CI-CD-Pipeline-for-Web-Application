@@ -1,23 +1,46 @@
-# Jenkins Pipeline for Web App Deployment
+# Web Application Deployment Pipeline with Jenkins, Ansible, and Docker
 
 ## Overview
+An automated CI/CD pipeline that deploys a 3-tier web application (React frontend, Node.js backend, PostgreSQL database) using Jenkins, Ansible, and Docker on AWS infrastructure.
 
-This project showcases a production-grade DevOps pipeline that automatically deploys a containerized todo web application across multiple AWS EC2 instances. The application enables users to create and manage their todo items through an intuitive web interface, with data persistently stored in PostgreSQL.
+## Key Features
+- Fully automated deployment process
+- Containerized microservices architecture  
+- Infrastructure as Code using Terraform
+- Container orchestration with Ansible
+- Automated image management with AWS ECR
+- High availability and scalability
 
-## Technical Highlights
+## Technologies
+- **Infrastructure:** AWS, Terraform
+- **CI/CD:** Jenkins Pipeline
+- **Configuration Management:** Ansible 
+- **Containerization:** Docker
+- **Application Stack:** React, Node.js, PostgreSQL
 
-- **Modern Architecture**: Built with React (frontend), Node.js (backend), and PostgreSQL (database), each running in isolated Docker containers
-- **Infrastructure as Code**: Fully automated AWS infrastructure provisioning using Terraform
-- **CI/CD Pipeline**: Jenkins pipeline that handles everything from building Docker images to deployment
-- **Configuration Management**: Ansible playbooks manage application configuration and container deployments
-- **Container Registry**: Leverages AWS ECR for secure Docker image management
+## Architecture
 
-## Value Proposition
+The application consists of three containerized services:
+- Frontend (React) - Port 3000
+- Backend (Node.js) - Port 5000  
+- Database (PostgreSQL) - Port 5432
 
-This project demonstrates expertise in DevOps practices, containerization, and cloud infrastructure, showing ability to:
-- Build scalable, maintainable deployment pipelines
-- Implement security best practices with proper isolation and access controls
-- Automate complex multi-service deployments
-- Manage cloud infrastructure efficiently using modern IaC tools
+## Quick Start
 
-The end result is a production-ready todo application that showcases both full-stack development and DevOps engineering capabilities.
+### Prerequisites
+- AWS Account
+- Jenkins Server with required plugins
+- Terraform and Ansible installed
+
+### Deployment
+1. Clone the repository
+2. Configure AWS credentials
+3. Run Jenkins pipeline 
+4. Access the application at `http://<react-instance-ip>:3000`
+
+## Results
+A production-ready web application with:
+- Automated infrastructure provisioning
+- Containerized microservices
+- Continuous Integration/Deployment
+- Scalable architecture
