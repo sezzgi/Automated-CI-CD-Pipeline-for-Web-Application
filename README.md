@@ -11,12 +11,6 @@ An automated CI/CD pipeline that deploys a 3-tier web application (React fronten
 - Automated image management with AWS ECR
 - High availability and scalability
 
-## Technologies
-- **Infrastructure:** AWS, Terraform
-- **CI/CD:** Jenkins Pipeline
-- **Configuration Management:** Ansible 
-- **Containerization:** Docker
-- **Application Stack:** React, Node.js, PostgreSQL
 
 ## Architecture
 
