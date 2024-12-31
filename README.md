@@ -1,4 +1,4 @@
-# Web Application Deployment Pipeline with Jenkins, Ansible, and Docker
+# Automated CI/CD Pipeline for Web Application
 
 ## Overview
 An automated CI/CD pipeline that deploys a 3-tier web application (React frontend, Node.js backend, PostgreSQL database) using Jenkins, Ansible, and Docker on AWS infrastructure.
